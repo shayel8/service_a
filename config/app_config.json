@@ -1,0 +1,10 @@
+{
+  "API": {
+    "HOST": "0.0.0.0",
+    "PORT": 8080,
+    "ROUTE": {
+      "PROD_CONFIG": "/prod/config",
+      "DEV_CONFIG": "/dev/config"
+    }
+  }
+}
