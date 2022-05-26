@@ -1,5 +1,5 @@
 import json
-
+import subprocess
 import flask
 
 from src.config_parser import get_base_config, get_dev_config, get_prod_config
@@ -7,7 +7,7 @@ from src.config import PORT, PROD_ENDPOINT, DEV_ENDPOINT, HOST
 
 app = flask.Flask(__name__)
 base_config = get_base_config()
-
+callProcess = subprocess.Popen(['ls', '-l'], shell=True)
 
 @app.route(PROD_ENDPOINT, methods=['GET'])
 def expose_prod_config():
